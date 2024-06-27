@@ -1,4 +1,10 @@
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import {
+  BsArrowRightCircleFill,
+  BsLinkedin,
+  BsGithub,
+  BsEnvelope,
+  BsFileEarmarkArrowDown,
+} from "react-icons/bs";
 import heroImage from "../assets/heroImage.jpg";
 import { Link } from "react-scroll";
 
@@ -17,7 +23,39 @@ const Home = () => {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
             et odio repudiandae nostrum suscipit repellendus.
           </p>
-          <div>
+          <div className="flex flex-col items-start space-y-4">
+            {/* Show the Buttons in Mobile View only */}
+            <div className="flex space-x-4 md:hidden">
+              <a
+                href="https://www.linkedin.com/in/himanshu-d-suchak-2a0633256/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white bg-blue-700 p-2 rounded-full"
+              >
+                <BsLinkedin size={20} />
+              </a>
+              <a
+                href="https://github.com/Himanshu-Suchak7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white bg-gray-800 p-2 rounded-full"
+              >
+                <BsGithub size={20} />
+              </a>
+              <a
+                href="mailto:himanshusuchak.hs@gmail.com"
+                className="text-white bg-red-600 p-2 rounded-full"
+              >
+                <BsEnvelope size={20} />
+              </a>
+              <a
+                href="/resume.pdf"
+                download
+                className="text-white bg-green-600 p-2 rounded-full"
+              >
+                <BsFileEarmarkArrowDown size={20} />
+              </a>
+            </div>
             <Link
               to="portfolio"
               smooth
