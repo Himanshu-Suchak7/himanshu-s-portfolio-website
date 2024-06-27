@@ -11,19 +11,21 @@ const Navbar = () => {
     { id: 4, link: "experience" },
     { id: 5, link: "contact" },
   ];
+
   return (
-    <div className=" flex justify-between items-center bg-black text-white w-full h-20 px-4 fixed">
+    <div className="flex justify-between items-center bg-black text-white w-full h-20 px-4 fixed">
       <div>
-        <h1 className="text-5xl font-signature ml-5 cursor-pointer">
-          Himanshu
-        </h1>
+        <Link to="home" smooth duration={500}>
+          <h1 className="text-5xl font-signature ml-5 cursor-pointer">
+            Himanshu
+          </h1>
+        </Link>
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="cursor-pointer capitalize px-4
-            font-medium text-gray-500 hover:scale-105 duration-200"
+            className="cursor-pointer capitalize px-4 font-medium text-gray-500 hover:scale-105 duration-200"
           >
             <Link to={link} smooth duration={500}>
               {link}
@@ -42,8 +44,7 @@ const Navbar = () => {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="cursor-pointer capitalize px-4 py-6 text-4xl
-            font-medium text-gray-500 hover:scale-105 duration-200"
+              className="cursor-pointer capitalize px-4 py-6 text-4xl font-medium text-gray-500 hover:scale-105 duration-200"
             >
               <Link
                 onClick={() => setNav(!nav)}
