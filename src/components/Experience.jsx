@@ -27,7 +27,7 @@ const Experience = () => {
       id: 10,
       src: node,
       title: "Node.js/Express.js",
-      style: "shadow-green-500",
+      style: "shadow-green-500 text-xs",
     },
     { id: 11, src: mongodb, title: "MongoDB", style: "shadow-green-500" },
     { id: 12, src: mysql, title: "MySQL", style: "shadow-sky-500" },
@@ -56,7 +56,7 @@ const Experience = () => {
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={src} alt={title} className="w-20 mx-auto" />
-              <p className="mt-4">{title}</p>
+              <p className="mt-4 overflow-auto">{title}</p>
             </div>
           ))}
         </div>
