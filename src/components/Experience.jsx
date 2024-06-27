@@ -16,22 +16,57 @@ const Experience = () => {
   const experiences = [
     { id: 1, src: html, title: "HTML", style: "shadow-orange-500" },
     { id: 2, src: css, title: "CSS", style: "shadow-blue-500" },
-    { id: 3, src: javascript, title: "JavaScript", style: "shadow-yellow-500" },
-    { id: 4, src: reactImage, title: "React.js", style: "shadow-blue-600" },
-    { id: 5, src: tailwind, title: "Tailwind CSS", style: "shadow-sky-400" },
-    { id: 6, src: sass, title: "SASS", style: "shadow-pink-500" },
+    {
+      id: 3,
+      src: javascript,
+      title: "JavaScript",
+      style: "shadow-yellow-500",
+    },
+    {
+      id: 4,
+      src: reactImage,
+      title: "React.js",
+      style: "shadow-blue-600 ",
+    },
+    {
+      id: 5,
+      src: tailwind,
+      title: "Tailwind CSS",
+      style: "shadow-sky-400 ",
+    },
+    { id: 6, src: sass, title: "SASS", style: "shadow-pink-500 " },
     { id: 7, src: nextjs, title: "Next.js", style: "shadow-white" },
-    { id: 8, src: bootstrap, title: "Bootstrap", style: "shadow-purple-500" },
-    { id: 9, src: firebase, title: "Firebase", style: "shadow-orange-500" },
+    {
+      id: 8,
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-purple-500 ",
+    },
+    {
+      id: 9,
+      src: firebase,
+      title: "Firebase",
+      style: "shadow-orange-500 ",
+    },
     {
       id: 10,
       src: node,
       title: "Node.js/Express.js",
-      style: "shadow-green-500 text-xs",
+      style: "shadow-green-500",
     },
-    { id: 11, src: mongodb, title: "MongoDB", style: "shadow-green-500" },
+    {
+      id: 11,
+      src: mongodb,
+      title: "MongoDB",
+      style: "shadow-green-500",
+    },
     { id: 12, src: mysql, title: "MySQL", style: "shadow-sky-500" },
-    { id: 13, src: github, title: "GitHub", style: "shadow-gray-500" },
+    {
+      id: 13,
+      src: github,
+      title: "GitHub",
+      style: "shadow-gray-500 ",
+    },
   ];
 
   return (
@@ -56,7 +91,9 @@ const Experience = () => {
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={src} alt={title} className="w-20 mx-auto" />
-              <p className="mt-4 overflow-auto">{title}</p>
+              <p className="text-xs overflow-auto sm:mt-4 sm:text-base">
+                {title}
+              </p>
             </div>
           ))}
         </div>
