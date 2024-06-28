@@ -12,14 +12,14 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
+      className="h-screen w-full bg-gradient-to-b from-white via-gray-100 to-gray-300 dark:bg-gradient-to-b dark:from-black dark:via-black dark:to-gray-800"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I&apos;m a Full Stack Web Developer
+          <h2 className="text-4xl sm:text-7xl font-bold text-black dark:text-white">
+            I&apos;m a Full Stack Developer
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
+          <p className="text-gray-700 dark:text-gray-500 py-4 max-w-md">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
             et odio repudiandae nostrum suscipit repellendus.
           </p>

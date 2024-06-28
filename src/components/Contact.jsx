@@ -2,11 +2,11 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full py-24 bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+      className="w-full py-24 bg-gradient-to-b from-white to-gray-300 dark:bg-gradient-to-b dark:from-black dark:to-gray-800 p-4 dark:text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-700 dark:border-gray-500">
             Contact
           </p>
           <p className="py-6">
@@ -23,19 +23,19 @@ const Contact = () => {
                 type="text"
                 name="name"
                 placeholder="Enter your name"
-                className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                className="p-2 bg-transparent border-2 rounded-md text-black dark:text-white focus:outline-none placeholder-gray-700 border-gray-500 dark:placeholder-current"
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Enter your email"
-                className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                className="my-4 p-2 bg-transparent border-2 rounded-md text-black dark:text-white focus:outline-none placeholder-gray-700 border-gray-500 dark:placeholder-current"
               />
               <textarea
                 name="message"
                 rows={10}
                 placeholder="Enter your message"
-                className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                className="p-2 bg-transparent border-2 rounded-md text-black dark:text-white focus:outline-none placeholder-gray-700 border-gray-500 dark:placeholder-current"
               ></textarea>
               <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
                 Let&apos;s Talk

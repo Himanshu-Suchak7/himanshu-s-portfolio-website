@@ -2,11 +2,11 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full bg-gradient-to-b from-gray-800 to-black text-white py-24"
+      className="w-full bg-gradient-to-b from-gray-300 to-white text-black dark:bg-gradient-to-b dark:from-gray-800 dark:to-black dark:text-white py-24"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-700 dark:border-gray-500">
             About
           </p>
         </div>
