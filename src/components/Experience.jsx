@@ -19,17 +19,19 @@ const Experience = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    const matchMedia = window.matchMedia("(prefers-color-scheme: dark)");
-    setIsDarkMode(matchMedia.matches);
+    const root = window.document.documentElement;
+    setIsDarkMode(root.classList.contains('dark'));
 
-    const handleChange = (e) => {
-      setIsDarkMode(e.matches);
-    };
+    const observer = new MutationObserver(() => {
+      setIsDarkMode(root.classList.contains('dark'));
+    });
 
-    matchMedia.addEventListener("change", handleChange);
-    return () => {
-      matchMedia.removeEventListener("change", handleChange);
-    };
+    observer.observe(root, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   const experiences = [
@@ -45,15 +47,15 @@ const Experience = () => {
       id: 4,
       src: reactImage,
       title: "React.js",
-      style: "shadow-sky-500 ",
+      style: "shadow-sky-500",
     },
     {
       id: 5,
       src: tailwind,
       title: "Tailwind CSS",
-      style: "shadow-sky-600 ",
+      style: "shadow-sky-600",
     },
-    { id: 6, src: sass, title: "SASS", style: "shadow-pink-500 " },
+    { id: 6, src: sass, title: "SASS", style: "shadow-pink-500" },
     {
       id: 7,
       src: isDarkMode ? nextjs : nextjs1,
@@ -64,13 +66,13 @@ const Experience = () => {
       id: 8,
       src: bootstrap,
       title: "Bootstrap",
-      style: "shadow-purple-500 ",
+      style: "shadow-purple-500",
     },
     {
       id: 9,
       src: firebase,
       title: "Firebase",
-      style: "shadow-orange-500 ",
+      style: "shadow-orange-500",
     },
     {
       id: 10,
@@ -89,7 +91,7 @@ const Experience = () => {
       id: 13,
       src: isDarkMode ? github : github1,
       title: "GitHub",
-      style: "shadow-gray-500 ",
+      style: "shadow-gray-500",
     },
   ];
 

@@ -24,18 +24,21 @@ const Contact = () => {
                 name="name"
                 placeholder="Enter your name"
                 className="p-2 bg-transparent border-2 rounded-md text-black dark:text-white focus:outline-none placeholder-gray-700 border-gray-500 dark:placeholder-current"
+                required
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Enter your email"
                 className="my-4 p-2 bg-transparent border-2 rounded-md text-black dark:text-white focus:outline-none placeholder-gray-700 border-gray-500 dark:placeholder-current"
+                required
               />
               <textarea
                 name="message"
                 rows={10}
                 placeholder="Enter your message"
                 className="p-2 bg-transparent border-2 rounded-md text-black dark:text-white focus:outline-none placeholder-gray-700 border-gray-500 dark:placeholder-current"
+                required
               ></textarea>
               <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
                 Let&apos;s Talk
