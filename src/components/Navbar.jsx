@@ -13,7 +13,7 @@ const Navbar = () => {
     if (savedTheme) {
       setDarkMode(savedTheme === "dark");
     } else {
-      root.classList.add("dark"); // Default to dark mode
+      root.classList.add("dark");
       localStorage.setItem("theme", "dark");
     }
   }, []);
