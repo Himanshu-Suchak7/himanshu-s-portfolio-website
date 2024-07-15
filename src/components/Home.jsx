@@ -17,11 +17,12 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-black dark:text-white">
-            I&apos;m a Full Stack Developer
+            I&apos;m a Frontend Developer
           </h2>
           <p className="text-gray-700 dark:text-gray-500 py-4 max-w-md">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
-            et odio repudiandae nostrum suscipit repellendus.
+            Hello, I&apos;m Himanshu Suchak, and I am a frontend developer and I
+            loved making beautiful websites that have a ability to work on every
+            devices from Desktops to Mobile Phones.
           </p>
           <div className="flex flex-col items-start space-y-4">
             {/* Show the Buttons in Mobile View only */}

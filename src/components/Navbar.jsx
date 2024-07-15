@@ -33,9 +33,9 @@ const Navbar = () => {
     { id: 1, link: "home" },
     { id: 2, link: "about" },
     { id: 3, link: "portfolio" },
-    { id: 4, link: "experience" },
+    { id: 4, link: "techstack" },
     { id: 5, link: "contact" },
-  ];
+  ];11
 
   return (
     <div className="flex z-50 justify-between items-center bg-white text-black dark:bg-black dark:text-white w-full h-20 px-4 fixed">
